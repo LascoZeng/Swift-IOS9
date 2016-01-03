@@ -1,15 +1,11 @@
-//
-//  ViewController.swift
-//  Swift-IOS9
-//
-//  Created by Jonathan Contreras on 02/01/16.
-//  Copyright © 2016 Jonathan Maldonado Conterras. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var showImageButton: UIButton!
+    @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var background: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +16,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func onButtonClicked(sender :AnyObject) {
+        showImageButton.hidden = true
+        background.hidden = false
+        logo.hidden = false
+    }
 
 }
 
